@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wapper">
+        <h2>fahrenheit to celsius </h2>
+        <div id="in">
+            <input type="text" id="input" placeholder="Enter into  fahrenheit  ">
+        </div>
+        <div id="clk">
+
+            <button id="click">Convert into celsius</button>
+        </div>
+        <DIV id="result">
+
+        </DIV>
+
+    </div>
+    <script>
+        document.getElementById("click").onclick=function()
+    {
+        const  f= document.getElementById("input").value;
+        const c=((f-32)*(5/9));
+        const result=document.getElementById('result');
+        result.innerHTML=c.toFixed(3)+" inches";
+
+    }
+
+    </script>
+</body>
+
+</html>
